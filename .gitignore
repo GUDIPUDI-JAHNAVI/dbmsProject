@@ -1,0 +1,16 @@
+# Dependencies
+frontend/node_modules/
+backend/gateway/venv/
+backend/coreservices/target/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Env secrets
+.env
+backend/gateway/.env
+backend/coreservices/.env
