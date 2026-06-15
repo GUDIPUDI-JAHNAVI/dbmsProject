@@ -2,6 +2,12 @@
 
 Full-stack **Multi-Category Search & Filter** system (your FrontEnd UI + DSEDBD-style architecture).
 
+## Live demo (GitHub Pages)
+
+**https://gudipudi-jahnavi.github.io/dbmsProject/**
+
+The UI is deployed automatically from `main`. Sign-in and search still need the local backend (gateway + Spring Boot + PostgreSQL) running, or a deployed API URL via `VITE_API_BASE_URL`.
+
 ## Folder structure (same as DSEDBD)
 
 ```
