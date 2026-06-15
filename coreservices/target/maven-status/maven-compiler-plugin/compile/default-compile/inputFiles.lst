@@ -1,0 +1,16 @@
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/config/DataInitializer.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/services/JwtService.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/controllers/ItemController.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/repository/RolesRepository.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/models/Roles.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/repository/ItemsRepository.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/services/AuthService.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/CoreservicesApplication.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/models/Items.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/controllers/ViewController.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/controllers/AuthController.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/repository/UsersRepository.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/util/ApiResponse.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/ServletInitializer.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/models/Users.java
+/Users/jahnavigudipudi/Downloads/dbmsProject/backend/coreservices/src/main/java/dbms/services/ItemService.java
