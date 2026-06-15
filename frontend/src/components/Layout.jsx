@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { clearAuth, isAuth } from '../lib';
+import { clearAuth, isAuth, isDemoMode } from '../lib';
 
 const Layout = ({ children }) => {
   const navigate = useNavigate();
@@ -28,6 +28,11 @@ const Layout = ({ children }) => {
           )}
         </div>
       </header>
+      {isDemoMode() && (
+        <p className="demo-banner">
+          Demo mode: sign up and search work in your browser without the backend.
+        </p>
+      )}
       <main className="app-main" aria-live="polite">{children}</main>
       <footer className="app-footer">
         <p>React + Vite &middot; FastAPI Gateway &middot; Spring Boot</p>

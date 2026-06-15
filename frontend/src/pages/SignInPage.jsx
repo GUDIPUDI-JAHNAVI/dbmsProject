@@ -22,7 +22,7 @@ const SignInPage = () => {
         }
         const user = res.data?.user || { email: email.trim().toLowerCase() };
         setAuth(token, user);
-        window.location.assign('/search');
+        navigate('/search');
       }
     );
   };
