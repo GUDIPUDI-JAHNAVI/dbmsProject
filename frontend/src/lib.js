@@ -1,12 +1,18 @@
 import { demoSearch, demoSignin, demoSignup } from './demoData';
 
-export const isDemoMode = () => {
-  if (import.meta.env.VITE_API_BASE_URL) return false;
+const isLocalhost = () => {
   const host = window.location.hostname;
-  return host !== 'localhost' && host !== '127.0.0.1';
+  return host === 'localhost' || host === '127.0.0.1';
 };
 
-export const apibaseurl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+export const isDemoMode = () => {
+  if (import.meta.env.VITE_API_BASE_URL) return false;
+  if (isLocalhost()) return false;
+  return window.location.hostname.endsWith('github.io');
+};
+
+export const apibaseurl = import.meta.env.VITE_API_BASE_URL
+  || (isLocalhost() ? 'http://localhost:8000' : '');
 
 export const getToken = () => localStorage.getItem('jwtToken') || '';
 export const isAuth = () => Boolean(getToken());
@@ -79,7 +85,7 @@ export function callApi(reqMethod, apiUrl, jsonData, responseHandler, jwtToken =
     .then((data) => responseHandler(data))
     .catch((err) => {
       const message = err.message === 'Failed to fetch'
-        ? 'Cannot reach the API. Start the backend locally, or use the GitHub Pages demo mode.'
+        ? 'Cannot reach the API. Check that the backend is running or DATABASE_URL is set on Vercel.'
         : err.message || String(err);
       alert(message);
     });

@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       </header>
       {isDemoMode() && (
         <p className="demo-banner">
-          Demo mode: sign up and search work in your browser without the backend.
+          GitHub Pages demo mode: auth and search run in your browser only.
         </p>
       )}
       <main className="app-main" aria-live="polite">{children}</main>

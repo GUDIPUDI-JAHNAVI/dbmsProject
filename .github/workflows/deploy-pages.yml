@@ -32,6 +32,8 @@ jobs:
 
       - name: Build
         working-directory: frontend
+        env:
+          VITE_BASE_PATH: /dbmsProject/
         run: npm run build
 
       - name: Add SPA fallback for client-side routing

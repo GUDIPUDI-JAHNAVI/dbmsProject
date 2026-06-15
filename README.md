@@ -1,28 +1,42 @@
 # dbmsProject
 
-Full-stack **Multi-Category Search & Filter** system (your FrontEnd UI + DSEDBD-style architecture).
+Full-stack **Multi-Category Search & Filter** system (React frontend + FastAPI API + PostgreSQL).
 
-## Live demo (GitHub Pages)
+## Live demo (Vercel — full stack)
+
+Deploy the **frontend + API** together on Vercel:
+
+1. Push this repo to GitHub.
+2. Go to [vercel.com/new](https://vercel.com/new) and import **GUDIPUDI-JAHNAVI/dbmsProject**.
+3. Create a free Postgres database at [neon.tech](https://neon.tech) (or Vercel Postgres).
+4. In Vercel **Project → Settings → Environment Variables**, add:
+   - `DATABASE_URL` = your Postgres connection string
+   - `JWT_SECRET` = any long random string
+5. Click **Deploy**.
+
+Your live app will be at:
+
+**`https://<your-project>.vercel.app`**
+
+Sign up, sign in, and search all use the deployed API and database.
+
+## Live demo (GitHub Pages — UI only)
 
 **https://gudipudi-jahnavi.github.io/dbmsProject/**
 
-The UI is deployed automatically from `main` to the `gh-pages` branch.
+GitHub Pages serves the frontend only. Sign-up/search use browser demo mode there.
 
 **One-time GitHub setup:** Repo **Settings → Pages → Build and deployment → Source:** `Deploy from a branch` → Branch: `gh-pages` → Folder: `/ (root)`.
 
-Sign-in and search still need the local backend (gateway + Spring Boot + PostgreSQL) running, or a deployed API URL via `VITE_API_BASE_URL`.
-
-## Folder structure (same as DSEDBD)
+## Folder structure
 
 ```
 dbmsProject/
 ├── frontend/                 # React + Vite
-└── backend/
-    ├── coreservices/         # Spring Boot — package `dbms`
-    └── gateway/              # FastAPI API Gateway
+├── api/                      # FastAPI API for Vercel deployment
+├── backend/gateway/          # Local FastAPI gateway (optional)
+└── vercel.json               # Vercel build + API rewrites
 ```
-
-Create an empty PostgreSQL database **`dbms`** in pgAdmin once (like **`mth`** in the example). Spring Boot + JPA then create tables automatically (`ddl-auto=update`).
 
 ## Rubric coverage
 
