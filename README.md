@@ -6,7 +6,11 @@ Full-stack **Multi-Category Search & Filter** system (your FrontEnd UI + DSEDBD-
 
 **https://gudipudi-jahnavi.github.io/dbmsProject/**
 
-The UI is deployed automatically from `main`. Sign-in and search still need the local backend (gateway + Spring Boot + PostgreSQL) running, or a deployed API URL via `VITE_API_BASE_URL`.
+The UI is deployed automatically from `main` to the `gh-pages` branch.
+
+**One-time GitHub setup:** Repo **Settings → Pages → Build and deployment → Source:** `Deploy from a branch` → Branch: `gh-pages` → Folder: `/ (root)`.
+
+Sign-in and search still need the local backend (gateway + Spring Boot + PostgreSQL) running, or a deployed API URL via `VITE_API_BASE_URL`.
 
 ## Folder structure (same as DSEDBD)
 
